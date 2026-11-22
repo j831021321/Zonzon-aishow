@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="zh-Hant" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <!-- GSAP 由 prepare-composition.py 從 node_modules 複製（不走 CDN） -->
+    <script src="vendor/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Noto Sans TC"; font-weight: 400; src: url("fonts/NotoSansTC-Regular.otf"); }
+      @font-face { font-family: "Noto Sans TC"; font-weight: 700; src: url("fonts/NotoSansTC-Bold.otf"); }
+      @font-face { font-family: "Noto Sans TC"; font-weight: 900; src: url("fonts/NotoSansTC-Black.otf"); }
+      @font-face { font-family: "Noto Color Emoji"; src: url("fonts/NotoColorEmoji.ttf"); }
+
+      /* 品牌配色：brands/jiarong-coach/brand.md（覆蓋 design-system.md） */
+      :root {
+        --bg: #22302a; --ink: #f3efe6; --hi: #ffffff; --muted: #b4bfb6;
+        --r1: #d98b7a; --r2: #c9a66b; --r3: #e8c9a0; --r4: #7e9a8b;
+        --soft: rgba(243, 239, 230, 0.1);
+        --air: #2b3b34; /* 剖面卡底色：比 --bg 亮一點 */
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--bg); }
+      body { font-family: "Noto Sans TC", "Noto Color Emoji", sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+      #root { position: relative; width: 1080px; height: 1920px; background: var(--bg); overflow: hidden; }
+      .scene { position: absolute; inset: 0; }
+      .abs { position: absolute; }
+      .emo { font-family: "Noto Color Emoji", sans-serif; line-height: 1; }
+
+      .title { left: 65px; right: 65px; top: 210px; font-size: 100px; font-weight: 900; letter-spacing: 0.02em; line-height: 1.2; }
+      .stitle { left: 76px; top: 230px; font-size: 80px; font-weight: 900; line-height: 1.2; }
+      .pill {
+        display: inline-flex; align-items: center; gap: 12px; white-space: nowrap;
+        background: var(--hi); color: var(--bg); border-radius: 999px;
+        padding: 13px 37px; font-size: 41px; font-weight: 900; line-height: 1.2;
+      }
+      .badge { width: 86px; height: 86px; border-radius: 50%; background: var(--hi); color: var(--bg); display: grid; place-items: center; font-size: 64px; font-weight: 900; line-height: 1; }
+      .card { background: var(--soft); border-radius: 36px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+      .ring { position: absolute; inset: -17px; border: 10px solid var(--hi); border-radius: 46px; }
+      .footnote { left: 76px; right: 76px; text-align: center; font-size: 37px; font-weight: 700; color: var(--muted); }
+
+      /* 剖面卡：透過一個窗戶看進身體裡（cross-section.md 第 2 節） */
+      .xcard { left: 65px; top: 390px; width: 950px; height: 890px; border-radius: 32px; background: var(--air); overflow: hidden; }
+      .xcard svg { position: absolute; inset: 0; }
+      .lbl { font: 700 22px "Noto Sans TC", sans-serif; fill: #f3efe6; }
+      .tag { font-size: 38px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+
+      /* 疊在剖面上的小卡 */
+      .over { background: var(--bg); border-radius: 36px; }
+
+      /* 做法卡 */
+      .tip { left: 65px; width: 950px; height: 260px; border-radius: 32px; background: var(--bg); display: flex; align-items: center; gap: 26px; padding: 0 40px; }
+      .tip .emo { font-size: 96px; }
+      .tip .k { font-size: 52px; font-weight: 900; white-space: nowrap; }
+      .tip .arrow { font-size: 56px; font-weight: 900; color: var(--r3); }
+      .tip .v { font-size: 52px; font-weight: 900; color: var(--r3); white-space: nowrap; }
+
+      #captions { position: absolute; left: 76px; right: 76px; top: 1375px; height: 205px; }
+      #captions p {
+        position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center;
+        text-align: center; font-size: 69px; font-weight: 700; line-height: 1.35; text-wrap: balance; opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="62.68" data-width="1080" data-height="1920">
+
+      <audio id="voice" src="voice.mp3" data-start="0" data-duration="61.68" data-track-index="9" data-volume="1"></audio>
+
+      <!-- S1：開場（0–7.76） -->
+      <section id="g1" class="clip scene" data-start="0" data-duration="7.76" data-track-index="1">
+        <h1 id="s1-title" class="abs title" style="text-align:center">晚餐不吃比較好？</h1>
+        <div id="m1" class="abs card" style="left:65px;top:620px;width:290px;height:340px">
+          <span class="emo" style="font-size:130px">🍳</span><span style="font-size:52px;font-weight:900">早</span>
+        </div>
+        <div id="m2" class="abs card" style="left:395px;top:620px;width:290px;height:340px">
+          <span class="emo" style="font-size:130px">🍱</span><span style="font-size:52px;font-weight:900">午</span>
+        </div>
+        <div id="m3" class="abs" style="left:725px;top:620px;width:290px;height:340px">
+          <div id="m3-in" class="abs card" data-layout-allow-overlap style="inset:0">
+            <span class="emo" style="font-size:130px">🍽️</span><span style="font-size:52px;font-weight:900">晚</span>
+          </div>
+          <div id="m3-x" class="abs" data-layout-allow-overlap style="inset:0;display:grid;place-items:center;font-size:260px;font-weight:900;color:var(--r1);line-height:1">✕</div>
+          <div id="m3-ring" class="ring"></div>
+          <div id="m3-q" class="abs badge" style="right:-30px;top:-40px">?</div>
+        </div>
+        <div id="s1-pill" class="abs" style="left:0;right:0;top:1060px;text-align:center"><span class="pill" style="font-size:56px;padding:18px 50px">第一步：戒晚餐？</span></div>
+      </section>
+
+      <!-- S2：剖面・胃（7.76–24.88） -->
+      <section id="g2" class="clip scene" data-start="7.76" data-duration="17.12" data-track-index="1">
+        <h1 id="s2-title" class="abs stitle">胃 <span style="font-size:46px;font-weight:700;color:var(--muted)">裡面發生什麼事</span></h1>
+        <div id="s2-card" class="abs xcard" data-layout-allow-occlusion>
+          <svg width="950" height="890" viewBox="-20 -10 490 460" preserveAspectRatio="xMidYMid meet">
+            <g id="s2-stomach">
+              <path d="M150 20 C 140 120, 40 150, 50 280 C 60 420, 300 440, 380 340 C 440 260, 400 140, 300 160 C 240 170, 230 90, 240 20 Z" fill="#9E4444" stroke="#7A3536" stroke-width="6"/>
+              <path d="M170 30 C 160 130, 75 160, 82 280 C 90 390, 290 405, 352 325 C 400 260, 370 175, 300 188 C 230 200, 210 110, 220 30 Z" fill="#D9837A"/>
+              <g stroke="#B5655D" stroke-width="6" fill="none" stroke-linecap="round">
+                <path d="M110 230 q 20 -20 40 0 t 40 0 t 40 0"/>
+                <path d="M105 290 q 20 -20 40 0 t 40 0 t 40 0 t 40 0"/>
+                <path d="M130 345 q 20 -20 40 0 t 40 0 t 40 0"/>
+              </g>
+            </g>
+            <!-- 飢餓素粒子：從胃壁外側冒出，往上飄 -->
+            <g id="gh" fill="#D98B7A" stroke="#F3EFE6" stroke-width="3">
+              <circle class="g" cx="60" cy="190" r="10"/>
+              <circle class="g" cx="40" cy="250" r="10"/>
+              <circle class="g" cx="70" cy="330" r="10"/>
+              <circle class="g" cx="130" cy="110" r="10"/>
+              <circle class="g" cx="410" cy="250" r="10"/>
+              <circle class="g" cx="395" cy="320" r="10"/>
+            </g>
+            <g id="gh2" fill="#D98B7A" stroke="#F3EFE6" stroke-width="3">
+              <circle class="g" cx="25" cy="160" r="10"/>
+              <circle class="g" cx="95" cy="80" r="10"/>
+              <circle class="g" cx="430" cy="200" r="10"/>
+              <circle class="g" cx="420" cy="380" r="10"/>
+              <circle class="g" cx="30" cy="390" r="10"/>
+              <circle class="g" cx="440" cy="300" r="10"/>
+            </g>
+            <path id="gh-lead" d="M 40 250 L -5 250" stroke="#F3EFE6" stroke-opacity=".7" stroke-width="2.5" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
+          </svg>
+          <div id="gh-tag" data-layout-allow-occlusion class="abs" style="left:28px;top:340px"><span data-layout-allow-occlusion class="pill" style="font-size:38px;background:var(--r1)">飢餓素</span></div>
+          <div id="gh-up" class="abs tag" style="right:40px;top:36px">⬆ 提醒你：該吃飯了</div>
+          <div id="s2-moon" class="abs emo" style="right:40px;top:30px;font-size:90px">🌙</div>
+          <div id="s2-night" class="abs" style="inset:0;background:#0f1713"></div>
+        </div>
+        <!-- 曲線小卡：疊在變暗的剖面上 -->
+        <div id="cv" class="abs over" data-layout-allow-overlap style="left:95px;top:470px;width:890px;height:720px">
+          <div class="abs" style="left:44px;top:34px;font-size:46px;font-weight:900">一天的飢餓素 <span style="font-size:34px;font-weight:700;color:var(--muted)">（飯前升高、吃完下降）</span></div>
+          <svg class="abs" style="left:0;top:110px" width="890" height="560" viewBox="0 0 890 560">
+            <line x1="40" y1="460" x2="850" y2="460" stroke="#F3EFE6" stroke-opacity=".35" stroke-width="4"/>
+            <path id="cv1" d="M40 380 C 100 380, 120 160, 160 160 C 195 160, 210 380, 255 380 C 330 380, 380 160, 420 160 C 455 160, 470 380, 515 380 C 590 380, 640 160, 680 160" stroke="#D98B7A" stroke-width="10" fill="none" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
+            <path id="cv2" d="M680 160 C 715 160, 730 380, 775 380 L 850 380" stroke="#D98B7A" stroke-width="10" fill="none" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
+            <path id="cv3" d="M680 160 C 740 160, 790 150, 850 145" stroke="#D98B7A" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="22 18"/>
+            <text x="160" y="520" text-anchor="middle" style="font:900 44px 'Noto Sans TC'" fill="#F3EFE6">早</text>
+            <text x="420" y="520" text-anchor="middle" style="font:900 44px 'Noto Sans TC'" fill="#F3EFE6">午</text>
+            <text id="cv-din" x="680" y="520" text-anchor="middle" style="font:900 44px 'Noto Sans TC'" fill="#F3EFE6">晚</text>
+          </svg>
+          <div id="cv-x2" class="abs" style="left:205px;top:205px"><span class="pill" style="font-size:52px;background:var(--r1)">×2</span></div>
+          <div id="cv-down" class="abs tag" style="left:180px;top:500px;font-size:34px;color:var(--r3)">⬇ 吃完下降</div>
+          <div id="cv-skip" class="abs emo" style="left:640px;top:575px;font-size:56px;color:var(--r1)">✕</div>
+          <div id="cv-demo" class="abs tag" style="right:30px;top:200px;font-size:34px;color:var(--muted)">示意</div>
+        </div>
+        <div id="s2-fn" class="abs footnote" style="top:1294px">Cummings 等，2001，Diabetes</div>
+      </section>
+
+      <!-- S3：剖面・肌肉（24.88–38.92） -->
+      <section id="g3" class="clip scene" data-start="24.88" data-duration="14.42" data-track-index="1">
+        <h1 id="s3-title" class="abs stitle">肌肉 <span style="font-size:46px;font-weight:700;color:var(--muted)">需要蛋白質</span></h1>
+        <div id="s3-card" class="abs xcard" data-layout-allow-occlusion data-layout-allow-overflow>
+          <svg width="950" height="890" viewBox="0 0 450 422" preserveAspectRatio="xMidYMid slice">
+            <rect width="450" height="450" fill="#5E2729"/>
+            <g fill="#9E4444" stroke="#7A3536" stroke-width="3">
+              <rect x="-10" y="20" width="470" height="90" rx="45"/>
+              <rect x="-10" y="312" width="470" height="90" rx="45"/>
+            </g>
+            <g stroke="#B65A5A" stroke-width="4">
+              <path d="M20 25 V105 M50 25 V105 M80 25 V105 M110 25 V105 M140 25 V105 M170 25 V105 M200 25 V105 M230 25 V105 M260 25 V105 M290 25 V105 M320 25 V105 M350 25 V105 M380 25 V105 M410 25 V105 M440 25 V105"/>
+              <path d="M20 317 V397 M50 317 V397 M80 317 V397 M110 317 V397 M140 317 V397 M170 317 V397 M200 317 V397 M230 317 V397 M260 317 V397 M290 317 V397 M320 317 V397 M350 317 V397 M380 317 V397 M410 317 V397 M440 317 V397"/>
+            </g>
+            <rect x="-10" y="135" width="470" height="150" rx="75" fill="#B65A5A" stroke="#7A3536" stroke-width="3"/>
+            <rect x="20" y="148" width="410" height="124" rx="62" fill="#8E3B3B"/>
+          </svg>
+          <!-- 蛋白質方塊（主角：--r3＋白色光圈），三堆：早／午／晚 -->
+          <div id="pq" class="abs" style="inset:0">
+            <div class="grp abs" id="pg1" style="left:95px;top:420px;width:220px">
+              <div class="q abs" style="left:20px;top:0"></div><div class="q abs" style="left:85px;top:0"></div><div class="q abs" style="left:150px;top:0"></div>
+            </div>
+            <div class="grp abs" id="pg2" style="left:365px;top:420px;width:220px">
+              <div class="q abs" style="left:20px;top:0"></div><div class="q abs" style="left:85px;top:0"></div><div class="q abs" style="left:150px;top:0"></div>
+            </div>
+            <div class="grp abs" id="pg3" style="left:635px;top:420px;width:220px">
+              <div class="q abs" style="left:20px;top:0"></div><div class="q abs" style="left:85px;top:0"></div><div class="q abs" style="left:150px;top:0"></div>
+            </div>
+          </div>
+          <div id="pl1" data-layout-allow-occlusion class="abs" style="left:95px;top:330px;width:220px;text-align:center"><span data-layout-allow-occlusion class="pill" style="font-size:40px">早</span></div>
+          <div id="pl2" data-layout-allow-occlusion class="abs" style="left:365px;top:330px;width:220px;text-align:center"><span data-layout-allow-occlusion class="pill" style="font-size:40px">午</span></div>
+          <div id="pl3" data-layout-allow-occlusion class="abs" style="left:635px;top:330px;width:220px;text-align:center"><span data-layout-allow-occlusion class="pill" style="font-size:40px">晚</span></div>
+          <div id="p-tag" data-layout-allow-occlusion class="abs tag" style="left:40px;top:36px">蛋白質 <span style="display:inline-block;width:34px;height:34px;border-radius:8px;background:var(--r3);outline:5px solid #fff;vertical-align:-4px;margin-left:8px"></span></div>
+          <div id="p-two" class="abs" style="left:0;right:0;top:640px;text-align:center"><span class="pill" style="font-size:52px">只剩兩餐可以分</span></div>
+        </div>
+        <!-- 對照小卡 -->
+        <div id="cmp" class="abs over" data-layout-allow-overlap style="left:95px;top:420px;width:890px;height:830px">
+          <div id="cmp-a" class="abs" style="left:44px;top:44px;right:44px">
+            <div style="font-size:42px;font-weight:900;margin-bottom:18px">集中在晚餐</div>
+            <div style="display:flex;gap:60px;align-items:flex-end">
+              <div class="mini"><i class="b4"></i><b>早</b></div>
+              <div class="mini"><i class="b4"></i><b>午</b></div>
+              <div class="mini"><i class="b4"></i><i class="b4"></i><i class="b4"></i><i class="b4"></i><b>晚</b></div>
+            </div>
+          </div>
+          <div id="cmp-b" class="abs" style="left:44px;top:350px;right:44px">
+            <div style="font-size:42px;font-weight:900;margin-bottom:18px;color:var(--r3)">平均分三餐</div>
+            <div style="display:flex;gap:60px;align-items:flex-end">
+              <div class="mini"><i class="b3"></i><i class="b3"></i><b>早</b></div>
+              <div class="mini"><i class="b3"></i><i class="b3"></i><b>午</b></div>
+              <div class="mini"><i class="b3"></i><i class="b3"></i><b>晚</b></div>
+            </div>
+          </div>
+          <div id="cmp-bars" class="abs" style="left:44px;top:600px;right:44px">
+            <div style="font-size:36px;font-weight:700;color:var(--muted);margin-bottom:12px">一天的肌肉合成</div>
+            <div id="bar-a" style="height:56px;width:480px;border-radius:16px;background:var(--r4);margin-bottom:16px"></div>
+            <div id="bar-b" style="height:56px;width:600px;border-radius:16px;background:var(--r3)"></div>
+          </div>
+          <div id="cmp-pill" class="abs" style="left:668px;top:712px"><span class="pill" style="font-size:48px">＋25%</span></div>
+        </div>
+        <div id="s3-fn" class="abs footnote" style="top:1294px">Mamerow 等，2014（8 人小型研究）</div>
+      </section>
+
+      <!-- S4：三個做法，疊在變暗的胃剖面上（38.92–48.44） -->
+      <section id="g4" class="clip scene" data-start="39.3" data-duration="9.14" data-track-index="1">
+        <h1 id="s4-title" class="abs stitle">晚餐這樣吃</h1>
+        <div id="s4-card" class="abs xcard" data-layout-allow-occlusion>
+          <svg width="950" height="890" viewBox="-20 -10 490 460" preserveAspectRatio="xMidYMid meet">
+            <path d="M150 20 C 140 120, 40 150, 50 280 C 60 420, 300 440, 380 340 C 440 260, 400 140, 300 160 C 240 170, 230 90, 240 20 Z" fill="#9E4444" stroke="#7A3536" stroke-width="6"/>
+            <path d="M170 30 C 160 130, 75 160, 82 280 C 90 390, 290 405, 352 325 C 400 260, 370 175, 300 188 C 230 200, 210 110, 220 30 Z" fill="#D9837A"/>
+          </svg>
+        </div>
+        <div id="t1" class="abs tip" data-layout-allow-overlap style="top:420px">
+          <span class="emo">☀️</span><span class="k">白天吃多</span><span class="arrow">→</span><span id="t1v" class="v">晚餐簡單</span>
+        </div>
+        <div id="t2" class="abs tip" data-layout-allow-overlap style="top:705px">
+          <span class="emo">🏃</span><span class="k">有運動</span><span class="arrow">→</span>
+          <svg width="170" height="170" viewBox="-50 -50 100 100" style="flex:none">
+            <path id="pz-pro" d="M0 0 L0 -46 A46 46 0 0 1 46 0 Z" fill="#E8C9A0"/>
+            <path id="pz-veg" d="M0 0 L46 0 A46 46 0 0 1 -46 0 Z" fill="#7E9A8B"/>
+            <path id="pz-sta" d="M0 0 L-46 0 A46 46 0 0 1 0 -46 Z" fill="#C9A66B"/>
+            <circle r="46" fill="none" stroke="#F3EFE6" stroke-width="4"/>
+          </svg>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:34px;font-weight:700;white-space:nowrap">
+            <span id="lg-pro" style="color:var(--r3)">■ 蛋白質</span><span id="lg-veg" style="color:var(--r4)">■ 蔬菜</span><span id="lg-sta" style="color:var(--r2)">■ 一點澱粉</span>
+          </div>
+        </div>
+        <div id="t3" class="abs tip" data-layout-allow-overlap style="top:990px">
+          <span class="emo">🌙</span><span class="k">吃得晚</span><span class="arrow">→</span><span id="t3v" class="v">清淡好消化</span>
+        </div>
+      </section>
+
+      <!-- S5＋S6：金句＋自我介紹（48.44–54.44） -->
+      <section id="g5" class="clip scene" data-start="48.44" data-duration="6.0" data-track-index="1">
+        <div id="q1" class="abs" style="left:0;right:0;top:480px;text-align:center;font-size:100px;font-weight:900;line-height:1.2">
+          <span style="position:relative;display:inline-block">不是餓自己<span id="q1-strike" class="abs" style="left:-10px;right:-10px;top:52%;height:12px;border-radius:6px;background:var(--r1)"></span></span>
+        </div>
+        <div id="q2" class="abs" style="left:0;right:0;top:680px;text-align:center;font-size:100px;font-weight:900;line-height:1.2">
+          是看懂<span style="background:var(--r3);color:var(--bg);border-radius:20px;padding:0 18px">一整天</span>
+        </div>
+        <div id="q3" class="abs" style="left:0;right:0;top:960px;display:flex;justify-content:center;gap:50px">
+          <span class="emo qm" style="font-size:110px">🍳</span><span class="emo qm" style="font-size:110px">🍱</span><span class="emo qm" style="font-size:110px">🍽️</span>
+        </div>
+      </section>
+
+      <!-- S7：結尾 CTA（54.44–62.68）；文字由 project.json 填入 -->
+      <section id="g7" class="clip scene" data-start="54.44" data-duration="8.24" data-track-index="1">
+        <div id="s7-name" class="abs" style="left:0;right:0;top:250px;text-align:center"><span class="pill" style="font-size:48px">佳蓉｜飲食教練</span></div>
+        <div id="s7-q" class="abs" data-cta="question" style="left:65px;right:65px;top:400px;text-align:center;font-size:88px;font-weight:900;line-height:1.3;text-wrap:balance">想知道你一整天到底有沒有吃對嗎？</div>
+        <div id="s7-card" class="abs" style="left:110px;top:720px;width:860px;height:380px;border-radius:48px;background:var(--hi);color:var(--bg);display:flex;align-items:center;justify-content:center;gap:28px">
+          <span class="emo" style="font-size:110px">💬</span>
+          <span style="font-size:84px;font-weight:900">留言</span>
+          <span id="s7-kw" data-cta="keyword" style="display:inline-block;background:var(--r3);border-radius:40px;padding:10px 40px;font-size:130px;font-weight:900;line-height:1.15">外食</span>
+        </div>
+        <div id="s7-act" class="abs" data-cta="action-tail" style="left:65px;right:65px;top:1160px;text-align:center;font-size:60px;font-weight:700">預約免費飲食諮詢！</div>
+      </section>
+
+      <!-- 字幕（prepare-composition.py 依 transcript.srt 產生）；CTA 大字出現後隱藏 -->
+      <div id="captions" class="clip" data-start="0" data-duration="62.68" data-track-index="5" data-hide-from="54.6">
+        <!-- CAPTIONS:BEGIN -->
+        <p data-s="0.00" data-e="3.00">晚餐不吃，真的會比較好嗎？</p>
+        <p data-s="3.00" data-e="5.34">很多女生想調整體態</p>
+        <p data-s="5.34" data-e="7.76">第一件事就是戒晚餐</p>
+        <p data-s="7.76" data-e="9.04">先看胃</p>
+        <p data-s="9.04" data-e="11.12">胃會分泌「飢餓素」</p>
+        <p data-s="11.12" data-e="13.10">提醒你該吃飯了</p>
+        <p data-s="13.10" data-e="13.86">研究發現</p>
+        <p data-s="13.86" data-e="16.34">它在飯前會升到快兩倍</p>
+        <p data-s="16.34" data-e="18.00">吃完才降下來</p>
+        <p data-s="18.00" data-e="18.96">跳過晚餐</p>
+        <p data-s="18.96" data-e="21.90">它就少了一次降下來的機會</p>
+        <p data-s="21.90" data-e="23.76">所以有些人撐到半夜</p>
+        <p data-s="23.76" data-e="24.88">反而更想吃</p>
+        <p data-s="24.88" data-e="26.52">再看肌肉</p>
+        <p data-s="26.52" data-e="28.50">有個小型研究發現</p>
+        <p data-s="28.50" data-e="30.68">蛋白質平均分到三餐</p>
+        <p data-s="30.68" data-e="32.18">比集中在晚餐</p>
+        <p data-s="32.18" data-e="33.76">一天的肌肉合成多</p>
+        <p data-s="33.76" data-e="35.44">了約百分之二十五</p>
+        <p data-s="35.44" data-e="36.50">晚餐不吃</p>
+        <p data-s="36.50" data-e="38.92">蛋白質就只剩兩餐可以分</p>
+        <p data-s="38.92" data-e="42.06">白天吃多，晚餐就簡單一點</p>
+        <p data-s="42.06" data-e="44.12">有運動，就配蛋白質</p>
+        <p data-s="44.12" data-e="45.68">蔬菜和一點澱粉</p>
+        <p data-s="45.68" data-e="48.44">吃得晚，就選清淡好消化的</p>
+        <p data-s="48.44" data-e="50.54">身材管理不是餓自己</p>
+        <p data-s="50.54" data-e="52.70">是看懂一整天吃了什麼</p>
+        <p data-s="52.70" data-e="54.44">我是佳蓉，飲食教練</p>
+        <p data-s="54.44" data-e="55.94">想知道你一整天</p>
+        <p data-s="55.94" data-e="57.64">到底有沒有吃對嗎？</p>
+        <p data-s="57.64" data-e="59.38">留言或私訊「外食」</p>
+        <p data-s="59.38" data-e="61.62">預約免費飲食諮詢！</p>
+        <!-- CAPTIONS:END -->
+      </div>
+    </div>
+
+    <style>
+      .q { width: 44px; height: 44px; border-radius: 10px; background: var(--r3); outline: 6px solid #fff; }
+      .mini { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+      .mini b { font-size: 36px; font-weight: 900; margin-top: 6px; }
+      .mini i { display: block; width: 58px; height: 30px; border-radius: 8px; }
+      .mini i.b4 { background: var(--r4); }
+      .mini i.b3 { background: var(--r3); }
+    </style>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const fadeUp = (s, t) => tl.fromTo(s, { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, t);
+      const slideIn = (s, t) => tl.fromTo(s, { opacity: 0, x: 54 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, t);
+      const pop = (s, t) => tl.fromTo(s, { opacity: 0, y: -86, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(2.2)" }, t);
+      const fadeIn = (s, t, d = 0.35) => tl.fromTo(s, { opacity: 0 }, { opacity: 1, duration: d, ease: "none" }, t);
+      const fadeOut = (s, t, to = 0) => tl.to(s, { opacity: to, duration: 0.35, ease: "none" }, t);
+      const draw = (s, t, d = 0.8) => tl.fromTo(s, { strokeDashoffset: 1.1 }, { strokeDashoffset: 0, duration: d, ease: "power1.inOut" }, t);
+      const breathe = (s, t, end, scale = 1.025) => {
+        const n = Math.max(1, Math.floor((end - t) / 1.1));
+        tl.to(s, { scale, duration: 0.55, ease: "sine.inOut", yoyo: true, repeat: n * 2 - 1 }, t);
+      };
+
+      // ── S1（0–7.76）標題第 0 格就在
+      gsap.set(["#m3-x", "#s1-pill"], { opacity: 0 });
+      breathe("#m3-ring", 0.2, 6.4, 1.03);
+      tl.to("#m3-in", { opacity: 0.4, duration: 0.35 }, 6.48);
+      pop("#m3-x", 6.48);
+      fadeOut("#m3-q", 6.48);
+      fadeOut("#m3-ring", 6.48);
+      fadeUp("#s1-pill", 6.0);
+
+      // ── S2 剖面・胃（7.76–24.88）
+      fadeUp("#s2-title", 7.8);
+      tl.fromTo("#s2-card", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 7.8);
+      tl.fromTo("#s2-stomach", { opacity: 0, scale: 0.92, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }, 8.0);
+      gsap.set(["#gh .g", "#gh2 .g", "#gh-tag", "#gh-up", "#s2-moon", "#s2-night", "#cv", "#cv3", "#cv-x2", "#cv-down", "#cv-skip", "#cv-demo", "#s2-fn"], { opacity: 0 });
+      gsap.utils.toArray("#gh .g").forEach((c, i) => {
+        tl.fromTo(c, { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 10.26 + i * 0.1);
+        tl.to(c, { y: -14, duration: 1.1, ease: "sine.inOut", yoyo: true, repeat: 1 }, 10.8 + i * 0.1);
+      });
+      draw("#gh-lead", 10.26, 0.4);
+      fadeIn("#gh-tag", 10.4);
+      fadeIn("#gh-up", 11.0);
+      tl.to("#gh .g", { scale: 1.4, duration: 0.25, yoyo: true, repeat: 1, transformOrigin: "50% 50%" }, 12.0);
+      // 曲線小卡（13.10–21.6）
+      fadeOut("#gh-up", 13.0);
+      tl.to("#s2-card", { opacity: 0.3, duration: 0.35 }, 13.1);
+      fadeIn("#cv", 13.15);
+      fadeIn("#s2-fn", 13.3);
+      draw("#cv1", 14.42, 1.2);
+      pop("#cv-x2", 15.72);
+      draw("#cv2", 17.1, 0.5);
+      fadeIn("#cv-down", 17.1);
+      // 跳過晚餐：下降段消失，改成沒有下降的示意虛線
+      tl.to("#cv2", { opacity: 0.15, duration: 0.35 }, 18.0);
+      pop("#cv-skip", 18.0);
+      fadeIn("#cv3", 18.4, 0.6);
+      fadeIn("#cv-demo", 18.6);
+      // 回到胃剖面，半夜
+      fadeOut("#cv", 21.6);
+      fadeOut("#s2-fn", 21.6);
+      tl.to("#s2-card", { opacity: 1, duration: 0.35 }, 21.6);
+      fadeIn("#s2-moon", 21.9);
+      tl.fromTo("#s2-night", { opacity: 0 }, { opacity: 0.35, duration: 0.9, ease: "none" }, 21.9);
+      gsap.utils.toArray("#gh2 .g").forEach((c, i) => {
+        tl.fromTo(c, { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 24.22 + i * 0.07);
+      });
+
+      // ── S3 剖面・肌肉（24.88–38.92）
+      fadeUp("#s3-title", 24.95);
+      tl.fromTo("#s3-card", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }, 24.95);
+      gsap.set(["#pl1", "#pl2", "#pl3", "#p-two", "#p-tag", "#cmp", "#cmp-a", "#cmp-b", "#cmp-bars", "#cmp-pill", "#s3-fn"], { opacity: 0 });
+      // 蛋白質方塊從上方流進來（先擠在中間），講到「三餐」分成三堆
+      gsap.utils.toArray("#pq .q").forEach((q, i) => {
+        const g = Math.floor(i / 3); // 0,1,2
+        tl.fromTo(q, { opacity: 0, y: -380, x: (1 - g) * 270 }, { opacity: 1, y: 0, x: (1 - g) * 270, duration: 0.8, ease: "power2.out" }, 28.5 + i * 0.08);
+        tl.to(q, { x: 0, duration: 0.6, ease: "power2.inOut" }, 30.1);
+      });
+      fadeIn("#p-tag", 28.5);
+      fadeUp("#pl1", 30.3); fadeUp("#pl2", 30.4); fadeUp("#pl3", 30.5);
+      // 對照小卡（30.68–35.3）
+      tl.to("#s3-card", { opacity: 0.3, duration: 0.35 }, 30.68);
+      fadeIn("#cmp", 30.68);
+      fadeIn("#s3-fn", 30.8);
+      slideIn("#cmp-a", 31.12);
+      slideIn("#cmp-b", 31.6);
+      fadeIn("#cmp-bars", 32.8);
+      tl.fromTo("#bar-a", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, 32.9);
+      tl.fromTo("#bar-b", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.7, ease: "power2.out" }, 33.3);
+      pop("#cmp-pill", 34.1);
+      fadeOut("#cmp", 35.3);
+      fadeOut("#s3-fn", 35.3);
+      tl.to("#s3-card", { opacity: 1, duration: 0.35 }, 35.3);
+      // 晚餐那堆消失
+      tl.to(["#pg3", "#pl3"], { opacity: 0.12, duration: 0.45 }, 37.8);
+      fadeUp("#p-two", 37.7);
+
+      // ── S4 做法（38.92–48.44）
+      fadeUp("#s4-title", 39.32);
+      tl.fromTo("#s4-card", { opacity: 0 }, { opacity: 0.3, duration: 0.35, ease: "none" }, 39.32);
+      gsap.set(["#t1v", "#pz-pro", "#pz-veg", "#pz-sta", "#lg-pro", "#lg-veg", "#lg-sta", "#t3v"], { opacity: 0 });
+      slideIn("#t1", 39.32);
+      fadeIn("#t1v", 40.62);
+      slideIn("#t2", 42.06);
+      fadeIn(["#pz-pro", "#lg-pro"], 43.36);
+      fadeIn(["#pz-veg", "#lg-veg"], 44.12);
+      fadeIn(["#pz-sta", "#lg-sta"], 45.08);
+      slideIn("#t3", 45.68);
+      fadeIn("#t3v", 46.96);
+
+      // ── S5 金句（48.44–54.44）
+      fadeUp("#q1", 48.5);
+      tl.fromTo("#q1-strike", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, 49.74);
+      fadeUp("#q2", 51.26);
+      gsap.utils.toArray("#q3 .qm").forEach((m, i) => {
+        tl.fromTo(m, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 51.6 + i * 0.3);
+      });
+
+      // ── S7 CTA（54.44–62.68）
+      fadeUp("#s7-name", 54.5);
+      fadeUp("#s7-q", 54.6);
+      pop("#s7-card", 57.64);
+      breathe("#s7-kw", 58.1, 62.6, 1.06);
+      fadeUp("#s7-act", 59.5);
+
+      // 字幕
+      const hideFrom = +document.getElementById("captions").dataset.hideFrom || Infinity;
+      document.querySelectorAll("#captions p").forEach((p) => {
+        const s = +p.dataset.s, e = Math.min(+p.dataset.e, hideFrom);
+        if (s >= hideFrom) return;
+        tl.set(p, { opacity: 1 }, s);
+        tl.set(p, { opacity: 0 }, e);
+      });
+
+      tl.set({}, {}, 62.68);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
