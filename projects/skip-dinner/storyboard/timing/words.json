@@ -1,1490 +1,1490 @@
 [
 {
 "text": "晚",
-"start": 0.0,
-"end": 0.16,
+"start": 1.81,
+"end": 2.23,
 "line": 1
 },
 {
 "text": "餐",
-"start": 0.16,
-"end": 0.48,
+"start": 2.23,
+"end": 2.47,
 "line": 1
 },
 {
 "text": "不",
-"start": 0.48,
-"end": 0.62,
+"start": 2.47,
+"end": 2.59,
 "line": 1
 },
 {
 "text": "吃",
-"start": 0.62,
-"end": 0.94,
+"start": 2.59,
+"end": 2.85,
 "line": 1
 },
 {
 "text": "真",
-"start": 0.94,
-"end": 1.13,
+"start": 2.85,
+"end": 3.0,
 "line": 1
 },
 {
 "text": "的",
-"start": 1.13,
-"end": 1.32,
+"start": 3.0,
+"end": 3.15,
 "line": 1
 },
 {
 "text": "會",
-"start": 1.32,
-"end": 1.58,
+"start": 3.15,
+"end": 3.37,
 "line": 1
 },
 {
 "text": "比",
-"start": 1.58,
-"end": 1.75,
+"start": 3.37,
+"end": 3.49,
 "line": 1
 },
 {
 "text": "較",
-"start": 1.75,
-"end": 1.92,
+"start": 3.49,
+"end": 3.61,
 "line": 1
 },
 {
 "text": "好",
-"start": 1.92,
-"end": 2.22,
+"start": 3.61,
+"end": 3.85,
 "line": 1
 },
 {
 "text": "嗎",
-"start": 2.22,
-"end": 2.44,
+"start": 3.85,
+"end": 4.07,
 "line": 1
 },
 {
 "text": "很",
-"start": 3.0,
-"end": 3.24,
+"start": 4.33,
+"end": 4.57,
 "line": 2
 },
 {
 "text": "多",
-"start": 3.24,
-"end": 3.48,
+"start": 4.57,
+"end": 4.81,
 "line": 2
 },
 {
 "text": "女",
-"start": 3.48,
-"end": 3.76,
+"start": 4.81,
+"end": 5.07,
 "line": 2
 },
 {
 "text": "生",
-"start": 3.76,
-"end": 4.02,
+"start": 5.07,
+"end": 5.33,
 "line": 2
 },
 {
 "text": "想",
-"start": 4.02,
-"end": 4.24,
+"start": 5.33,
+"end": 5.55,
 "line": 2
 },
 {
 "text": "調",
-"start": 4.24,
-"end": 4.48,
+"start": 5.55,
+"end": 5.77,
 "line": 2
 },
 {
 "text": "整",
-"start": 4.48,
-"end": 4.7,
+"start": 5.77,
+"end": 5.97,
 "line": 2
 },
 {
 "text": "體",
-"start": 4.7,
-"end": 4.92,
+"start": 5.97,
+"end": 6.17,
 "line": 2
 },
 {
 "text": "態",
-"start": 4.92,
-"end": 5.2,
+"start": 6.17,
+"end": 6.43,
 "line": 2
 },
 {
 "text": "第",
-"start": 5.34,
-"end": 5.53,
+"start": 6.55,
+"end": 6.75,
 "line": 2
 },
 {
 "text": "一",
-"start": 5.53,
-"end": 5.72,
+"start": 6.75,
+"end": 6.95,
 "line": 2
 },
 {
 "text": "件",
-"start": 5.72,
-"end": 5.9,
+"start": 6.95,
+"end": 7.15,
 "line": 2
 },
 {
 "text": "事",
-"start": 5.9,
-"end": 6.2,
+"start": 7.15,
+"end": 7.43,
 "line": 2
 },
 {
 "text": "就",
-"start": 6.2,
-"end": 6.34,
+"start": 7.43,
+"end": 7.55,
 "line": 2
 },
 {
 "text": "是",
-"start": 6.34,
-"end": 6.48,
+"start": 7.55,
+"end": 7.67,
 "line": 2
 },
 {
 "text": "戒",
-"start": 6.48,
-"end": 6.88,
+"start": 7.67,
+"end": 7.99,
 "line": 2
 },
 {
 "text": "晚",
-"start": 6.88,
-"end": 7.02,
+"start": 7.99,
+"end": 8.11,
 "line": 2
 },
 {
 "text": "餐",
-"start": 7.02,
-"end": 7.36,
+"start": 8.11,
+"end": 8.47,
 "line": 2
 },
 {
 "text": "先",
-"start": 7.76,
-"end": 8.24,
+"start": 8.61,
+"end": 8.99,
 "line": 3
 },
 {
 "text": "看",
-"start": 8.24,
-"end": 8.54,
+"start": 8.99,
+"end": 9.21,
 "line": 3
 },
 {
 "text": "胃",
-"start": 8.54,
-"end": 8.94,
+"start": 9.21,
+"end": 9.51,
 "line": 3
 },
 {
 "text": "胃",
-"start": 9.04,
-"end": 9.58,
+"start": 9.61,
+"end": 10.13,
 "line": 4
 },
 {
 "text": "會",
-"start": 9.58,
-"end": 9.8,
+"start": 10.13,
+"end": 10.27,
 "line": 4
 },
 {
 "text": "分",
-"start": 9.8,
-"end": 10.02,
+"start": 10.27,
+"end": 10.45,
 "line": 4
 },
 {
 "text": "泌",
-"start": 10.02,
-"end": 10.26,
+"start": 10.45,
+"end": 10.67,
 "line": 4
 },
 {
 "text": "飢",
-"start": 10.26,
-"end": 10.48,
+"start": 10.67,
+"end": 10.89,
 "line": 4
 },
 {
 "text": "餓",
-"start": 10.48,
-"end": 10.68,
+"start": 10.89,
+"end": 11.11,
 "line": 4
 },
 {
 "text": "素",
-"start": 10.68,
-"end": 10.96,
+"start": 11.11,
+"end": 11.35,
 "line": 4
 },
 {
 "text": "提",
-"start": 11.12,
-"end": 11.44,
+"start": 11.47,
+"end": 11.59,
 "line": 4
 },
 {
 "text": "醒",
-"start": 11.44,
-"end": 11.68,
+"start": 11.59,
+"end": 11.81,
 "line": 4
 },
 {
 "text": "你",
-"start": 11.68,
-"end": 11.84,
+"start": 11.81,
+"end": 11.97,
 "line": 4
 },
 {
 "text": "該",
-"start": 11.84,
-"end": 12.0,
+"start": 11.97,
+"end": 12.15,
 "line": 4
 },
 {
 "text": "吃",
-"start": 12.0,
-"end": 12.28,
+"start": 12.15,
+"end": 12.39,
 "line": 4
 },
 {
 "text": "飯",
-"start": 12.28,
-"end": 12.52,
+"start": 12.39,
+"end": 12.69,
 "line": 4
 },
 {
 "text": "了",
-"start": 12.52,
-"end": 12.72,
+"start": 12.69,
+"end": 12.79,
 "line": 4
 },
 {
 "text": "研",
-"start": 13.1,
-"end": 13.32,
+"start": 13.03,
+"end": 13.31,
 "line": 5
 },
 {
 "text": "究",
-"start": 13.32,
-"end": 13.52,
+"start": 13.31,
+"end": 13.43,
 "line": 5
 },
 {
 "text": "發",
-"start": 13.52,
-"end": 13.69,
+"start": 13.43,
+"end": 13.59,
 "line": 5
 },
 {
 "text": "現",
-"start": 13.69,
-"end": 13.86,
+"start": 13.59,
+"end": 13.75,
 "line": 5
 },
 {
 "text": "它",
-"start": 13.86,
-"end": 14.2,
+"start": 13.99,
+"end": 14.31,
 "line": 5
 },
 {
 "text": "在",
-"start": 14.2,
-"end": 14.42,
+"start": 14.31,
+"end": 14.55,
 "line": 5
 },
 {
 "text": "飯",
-"start": 14.42,
-"end": 14.62,
+"start": 14.55,
+"end": 14.77,
 "line": 5
 },
 {
 "text": "前",
-"start": 14.62,
-"end": 14.88,
+"start": 14.77,
+"end": 15.09,
 "line": 5
 },
 {
 "text": "會",
-"start": 14.88,
-"end": 15.12,
+"start": 15.09,
+"end": 15.39,
 "line": 5
 },
 {
 "text": "升",
-"start": 15.12,
-"end": 15.32,
+"start": 15.39,
+"end": 15.73,
 "line": 5
 },
 {
 "text": "到",
-"start": 15.32,
-"end": 15.54,
+"start": 15.73,
+"end": 16.13,
 "line": 5
 },
 {
 "text": "快",
-"start": 15.54,
-"end": 15.72,
+"start": 16.13,
+"end": 16.55,
 "line": 5
 },
 {
 "text": "兩",
-"start": 15.72,
-"end": 15.98,
+"start": 16.55,
+"end": 16.77,
 "line": 5
 },
 {
 "text": "倍",
-"start": 15.98,
-"end": 16.2,
+"start": 16.77,
+"end": 16.99,
 "line": 5
 },
 {
 "text": "吃",
-"start": 16.34,
-"end": 16.66,
+"start": 17.15,
+"end": 17.63,
 "line": 5
 },
 {
 "text": "完",
-"start": 16.66,
-"end": 16.88,
+"start": 17.63,
+"end": 17.85,
 "line": 5
 },
 {
 "text": "才",
-"start": 16.88,
-"end": 17.1,
+"start": 17.85,
+"end": 18.11,
 "line": 5
 },
 {
 "text": "降",
-"start": 17.1,
-"end": 17.32,
+"start": 18.11,
+"end": 18.41,
 "line": 5
 },
 {
 "text": "下",
-"start": 17.32,
-"end": 17.48,
+"start": 18.41,
+"end": 18.55,
 "line": 5
 },
 {
 "text": "來",
-"start": 17.48,
-"end": 17.64,
+"start": 18.55,
+"end": 18.69,
 "line": 5
 },
 {
 "text": "跳",
-"start": 18.0,
-"end": 18.34,
+"start": 19.07,
+"end": 19.55,
 "line": 6
 },
 {
 "text": "過",
-"start": 18.34,
-"end": 18.48,
+"start": 19.55,
+"end": 19.69,
 "line": 6
 },
 {
 "text": "晚",
-"start": 18.48,
-"end": 18.72,
-"line": 6
-},
-{
-"text": "餐",
-"start": 18.72,
-"end": 18.96,
-"line": 6
-},
-{
-"text": "它",
-"start": 18.96,
-"end": 19.16,
-"line": 6
-},
-{
-"text": "就",
-"start": 19.16,
-"end": 19.36,
-"line": 6
-},
-{
-"text": "少",
-"start": 19.36,
-"end": 19.6,
-"line": 6
-},
-{
-"text": "了",
-"start": 19.6,
-"end": 19.78,
-"line": 6
-},
-{
-"text": "一",
-"start": 19.78,
+"start": 19.69,
 "end": 19.87,
 "line": 6
 },
 {
-"text": "次",
+"text": "餐",
 "start": 19.87,
-"end": 19.96,
+"end": 20.21,
+"line": 6
+},
+{
+"text": "它",
+"start": 20.35,
+"end": 20.49,
+"line": 6
+},
+{
+"text": "就",
+"start": 20.49,
+"end": 20.73,
+"line": 6
+},
+{
+"text": "少",
+"start": 20.73,
+"end": 20.95,
+"line": 6
+},
+{
+"text": "了",
+"start": 20.95,
+"end": 21.11,
+"line": 6
+},
+{
+"text": "一",
+"start": 21.11,
+"end": 21.2,
+"line": 6
+},
+{
+"text": "次",
+"start": 21.2,
+"end": 21.29,
 "line": 6
 },
 {
 "text": "降",
-"start": 19.96,
-"end": 20.32,
+"start": 21.29,
+"end": 21.59,
 "line": 6
 },
 {
 "text": "下",
-"start": 20.32,
-"end": 20.47,
+"start": 21.59,
+"end": 21.72,
 "line": 6
 },
 {
 "text": "來",
-"start": 20.47,
-"end": 20.62,
+"start": 21.72,
+"end": 21.85,
 "line": 6
 },
 {
 "text": "的",
-"start": 20.62,
-"end": 20.84,
+"start": 21.85,
+"end": 22.05,
 "line": 6
 },
 {
 "text": "機",
-"start": 20.84,
-"end": 21.0,
+"start": 22.05,
+"end": 22.19,
 "line": 6
 },
 {
 "text": "會",
-"start": 21.0,
-"end": 21.16,
+"start": 22.19,
+"end": 22.33,
 "line": 6
 },
 {
 "text": "所",
-"start": 21.9,
-"end": 22.12,
+"start": 22.55,
+"end": 22.88,
 "line": 7
 },
 {
 "text": "以",
-"start": 22.12,
-"end": 22.34,
+"start": 22.88,
+"end": 23.21,
 "line": 7
 },
 {
 "text": "有",
-"start": 22.34,
-"end": 22.54,
+"start": 23.21,
+"end": 23.39,
 "line": 7
 },
 {
 "text": "些",
-"start": 22.54,
-"end": 22.74,
+"start": 23.39,
+"end": 23.53,
 "line": 7
 },
 {
 "text": "人",
-"start": 22.74,
-"end": 22.98,
+"start": 23.53,
+"end": 23.79,
 "line": 7
 },
 {
 "text": "撐",
-"start": 22.98,
-"end": 23.2,
+"start": 23.79,
+"end": 24.05,
 "line": 7
 },
 {
 "text": "到",
-"start": 23.2,
-"end": 23.36,
+"start": 24.05,
+"end": 24.23,
 "line": 7
 },
 {
 "text": "半",
-"start": 23.36,
-"end": 23.52,
+"start": 24.23,
+"end": 24.47,
 "line": 7
 },
 {
 "text": "夜",
-"start": 23.52,
-"end": 23.76,
+"start": 24.47,
+"end": 24.77,
 "line": 7
 },
 {
 "text": "反",
-"start": 23.76,
-"end": 24.0,
+"start": 24.77,
+"end": 24.99,
 "line": 7
 },
 {
 "text": "而",
-"start": 24.0,
-"end": 24.22,
+"start": 24.99,
+"end": 25.17,
 "line": 7
 },
 {
 "text": "更",
-"start": 24.22,
-"end": 24.4,
+"start": 25.17,
+"end": 25.35,
 "line": 7
 },
 {
 "text": "想",
-"start": 24.4,
-"end": 24.6,
+"start": 25.35,
+"end": 25.55,
 "line": 7
 },
 {
 "text": "吃",
-"start": 24.6,
-"end": 24.88,
+"start": 25.55,
+"end": 25.89,
 "line": 7
 },
 {
 "text": "再",
-"start": 24.88,
-"end": 25.68,
+"start": 25.89,
+"end": 26.57,
 "line": 8
 },
 {
 "text": "看",
-"start": 25.68,
-"end": 25.94,
+"start": 26.57,
+"end": 26.79,
 "line": 8
 },
 {
 "text": "肌",
-"start": 25.94,
-"end": 26.2,
+"start": 26.79,
+"end": 27.05,
 "line": 8
 },
 {
 "text": "肉",
-"start": 26.2,
-"end": 26.4,
+"start": 27.05,
+"end": 27.27,
 "line": 8
 },
 {
 "text": "有",
-"start": 26.52,
-"end": 26.98,
+"start": 27.37,
+"end": 27.93,
 "line": 9
 },
 {
 "text": "個",
-"start": 26.98,
-"end": 27.12,
+"start": 27.93,
+"end": 28.09,
 "line": 9
 },
 {
 "text": "小",
-"start": 27.12,
-"end": 27.3,
+"start": 28.09,
+"end": 28.29,
 "line": 9
 },
 {
 "text": "型",
-"start": 27.3,
-"end": 27.54,
+"start": 28.29,
+"end": 28.51,
 "line": 9
 },
 {
 "text": "研",
-"start": 27.54,
-"end": 27.74,
+"start": 28.51,
+"end": 28.67,
 "line": 9
 },
 {
 "text": "究",
-"start": 27.74,
-"end": 27.86,
+"start": 28.67,
+"end": 28.75,
 "line": 9
 },
 {
 "text": "發",
-"start": 27.86,
-"end": 28.03,
+"start": 28.75,
+"end": 28.9,
 "line": 9
 },
 {
 "text": "現",
-"start": 28.03,
-"end": 28.2,
+"start": 28.9,
+"end": 29.05,
 "line": 9
 },
 {
 "text": "蛋",
-"start": 28.5,
-"end": 28.78,
+"start": 29.29,
+"end": 29.59,
 "line": 9
 },
 {
 "text": "白",
-"start": 28.78,
-"end": 28.98,
+"start": 29.59,
+"end": 29.75,
 "line": 9
 },
 {
 "text": "質",
-"start": 28.98,
-"end": 29.16,
+"start": 29.75,
+"end": 29.97,
 "line": 9
 },
 {
 "text": "平",
-"start": 29.16,
-"end": 29.44,
+"start": 29.97,
+"end": 30.21,
 "line": 9
 },
 {
 "text": "均",
-"start": 29.44,
-"end": 29.7,
+"start": 30.21,
+"end": 30.53,
 "line": 9
 },
 {
 "text": "分",
-"start": 29.7,
-"end": 29.88,
+"start": 30.53,
+"end": 30.71,
 "line": 9
 },
 {
 "text": "到",
-"start": 29.88,
-"end": 30.1,
+"start": 30.71,
+"end": 30.93,
 "line": 9
 },
 {
 "text": "三",
-"start": 30.1,
-"end": 30.26,
+"start": 30.93,
+"end": 31.09,
 "line": 9
 },
 {
 "text": "餐",
-"start": 30.26,
-"end": 30.58,
+"start": 31.09,
+"end": 31.41,
 "line": 9
 },
 {
 "text": "比",
-"start": 30.68,
-"end": 31.12,
+"start": 31.61,
+"end": 31.83,
 "line": 10
 },
 {
 "text": "集",
-"start": 31.12,
-"end": 31.38,
+"start": 31.83,
+"end": 32.13,
 "line": 10
 },
 {
 "text": "中",
-"start": 31.38,
-"end": 31.54,
+"start": 32.13,
+"end": 32.37,
 "line": 10
 },
 {
 "text": "在",
-"start": 31.54,
-"end": 31.7,
+"start": 32.37,
+"end": 32.59,
 "line": 10
 },
 {
 "text": "晚",
-"start": 31.7,
-"end": 31.92,
+"start": 32.59,
+"end": 32.87,
 "line": 10
 },
 {
 "text": "餐",
-"start": 31.92,
-"end": 32.18,
+"start": 32.87,
+"end": 33.17,
 "line": 10
 },
 {
 "text": "一",
-"start": 32.18,
-"end": 32.44,
+"start": 33.27,
+"end": 33.67,
 "line": 10
 },
 {
 "text": "天",
-"start": 32.44,
-"end": 32.66,
+"start": 33.67,
+"end": 33.91,
 "line": 10
 },
 {
 "text": "的",
-"start": 32.66,
-"end": 32.8,
+"start": 33.91,
+"end": 34.05,
 "line": 10
 },
 {
 "text": "肌",
-"start": 32.8,
-"end": 32.98,
+"start": 34.05,
+"end": 34.33,
 "line": 10
 },
 {
 "text": "肉",
-"start": 32.98,
-"end": 33.2,
+"start": 34.33,
+"end": 34.55,
 "line": 10
 },
 {
 "text": "合",
-"start": 33.2,
-"end": 33.38,
+"start": 34.55,
+"end": 34.73,
 "line": 10
 },
 {
 "text": "成",
-"start": 33.38,
-"end": 33.54,
+"start": 34.73,
+"end": 34.93,
 "line": 10
 },
 {
 "text": "多",
-"start": 33.54,
-"end": 33.76,
+"start": 34.93,
+"end": 35.27,
 "line": 10
 },
 {
 "text": "了",
-"start": 33.76,
-"end": 33.92,
+"start": 35.27,
+"end": 35.45,
 "line": 10
 },
 {
 "text": "約",
-"start": 33.92,
-"end": 34.1,
+"start": 35.45,
+"end": 35.73,
 "line": 10
 },
 {
 "text": "百",
-"start": 34.1,
-"end": 34.253,
+"start": 35.73,
+"end": 36.09,
 "line": 10
 },
 {
 "text": "分",
-"start": 34.253,
-"end": 34.407,
+"start": 36.09,
+"end": 36.25,
 "line": 10
 },
 {
 "text": "之",
-"start": 34.407,
-"end": 34.56,
+"start": 36.25,
+"end": 36.49,
 "line": 10
 },
 {
 "text": "二",
-"start": 34.56,
-"end": 34.713,
+"start": 36.49,
+"end": 36.59,
 "line": 10
 },
 {
 "text": "十",
-"start": 34.713,
-"end": 34.867,
+"start": 36.59,
+"end": 36.77,
 "line": 10
 },
 {
 "text": "五",
-"start": 34.867,
-"end": 35.02,
+"start": 36.77,
+"end": 37.05,
 "line": 10
 },
 {
 "text": "晚",
-"start": 35.44,
-"end": 35.82,
+"start": 37.41,
+"end": 37.87,
 "line": 11
 },
 {
 "text": "餐",
-"start": 35.82,
-"end": 36.08,
+"start": 37.87,
+"end": 38.09,
 "line": 11
 },
 {
 "text": "不",
-"start": 36.08,
-"end": 36.2,
+"start": 38.09,
+"end": 38.21,
 "line": 11
 },
 {
 "text": "吃",
-"start": 36.2,
-"end": 36.5,
+"start": 38.21,
+"end": 38.49,
 "line": 11
 },
 {
 "text": "蛋",
-"start": 36.5,
-"end": 36.72,
+"start": 38.65,
+"end": 39.15,
 "line": 11
 },
 {
 "text": "白",
-"start": 36.72,
-"end": 36.92,
+"start": 39.15,
+"end": 39.31,
 "line": 11
 },
 {
 "text": "質",
-"start": 36.92,
-"end": 37.14,
+"start": 39.31,
+"end": 39.55,
 "line": 11
 },
 {
 "text": "就",
-"start": 37.14,
-"end": 37.36,
+"start": 39.55,
+"end": 39.81,
 "line": 11
 },
 {
 "text": "只",
-"start": 37.36,
-"end": 37.58,
+"start": 39.81,
+"end": 39.81,
 "line": 11
 },
 {
 "text": "剩",
-"start": 37.58,
-"end": 37.8,
+"start": 39.81,
+"end": 40.17,
 "line": 11
 },
 {
 "text": "兩",
-"start": 37.8,
-"end": 37.96,
+"start": 40.41,
+"end": 40.71,
 "line": 11
 },
 {
 "text": "餐",
-"start": 37.96,
-"end": 38.22,
+"start": 40.71,
+"end": 41.11,
 "line": 11
 },
 {
 "text": "可",
-"start": 38.22,
-"end": 38.33,
+"start": 41.11,
+"end": 41.22,
 "line": 11
 },
 {
 "text": "以",
-"start": 38.33,
-"end": 38.44,
+"start": 41.22,
+"end": 41.33,
 "line": 11
 },
 {
 "text": "分",
-"start": 38.44,
-"end": 38.74,
+"start": 41.33,
+"end": 41.75,
 "line": 11
 },
 {
 "text": "白",
-"start": 38.92,
-"end": 39.36,
+"start": 42.25,
+"end": 42.71,
 "line": 12
 },
 {
 "text": "天",
-"start": 39.36,
-"end": 39.52,
+"start": 42.71,
+"end": 42.91,
 "line": 12
 },
 {
 "text": "吃",
-"start": 39.52,
-"end": 39.72,
+"start": 42.91,
+"end": 43.13,
 "line": 12
 },
 {
 "text": "多",
-"start": 39.72,
-"end": 39.94,
+"start": 43.13,
+"end": 43.39,
 "line": 12
 },
 {
 "text": "晚",
-"start": 39.94,
-"end": 40.18,
+"start": 43.51,
+"end": 43.81,
 "line": 12
 },
 {
 "text": "餐",
-"start": 40.18,
-"end": 40.44,
+"start": 43.81,
+"end": 44.07,
 "line": 12
 },
 {
 "text": "就",
-"start": 40.44,
-"end": 40.62,
+"start": 44.07,
+"end": 44.25,
 "line": 12
 },
 {
 "text": "簡",
-"start": 40.62,
-"end": 40.77,
+"start": 44.25,
+"end": 44.41,
 "line": 12
 },
 {
 "text": "單",
-"start": 40.77,
-"end": 40.92,
+"start": 44.41,
+"end": 44.57,
 "line": 12
 },
 {
 "text": "一",
-"start": 40.92,
-"end": 41.1,
+"start": 44.57,
+"end": 44.57,
 "line": 12
 },
 {
 "text": "點",
-"start": 41.1,
-"end": 41.28,
+"start": 44.57,
+"end": 44.93,
 "line": 12
 },
 {
 "text": "有",
-"start": 42.06,
-"end": 42.5,
+"start": 45.45,
+"end": 45.91,
 "line": 13
 },
 {
 "text": "運",
-"start": 42.5,
-"end": 42.68,
+"start": 45.91,
+"end": 46.09,
 "line": 13
 },
 {
 "text": "動",
-"start": 42.68,
-"end": 43.0,
+"start": 46.09,
+"end": 46.43,
 "line": 13
 },
 {
 "text": "就",
-"start": 43.0,
-"end": 43.18,
+"start": 46.43,
+"end": 46.57,
 "line": 13
 },
 {
 "text": "配",
-"start": 43.18,
-"end": 43.36,
+"start": 46.85,
+"end": 47.07,
 "line": 13
 },
 {
 "text": "蛋",
-"start": 43.36,
-"end": 43.58,
+"start": 47.07,
+"end": 47.23,
 "line": 13
 },
 {
 "text": "白",
-"start": 43.58,
-"end": 43.78,
+"start": 47.23,
+"end": 47.43,
 "line": 13
 },
 {
 "text": "質",
-"start": 43.78,
-"end": 44.02,
+"start": 47.43,
+"end": 47.73,
 "line": 13
 },
 {
 "text": "蔬",
-"start": 44.12,
-"end": 44.36,
+"start": 47.83,
+"end": 48.23,
 "line": 13
 },
 {
 "text": "菜",
-"start": 44.36,
-"end": 44.64,
+"start": 48.23,
+"end": 48.53,
 "line": 13
 },
 {
 "text": "和",
-"start": 44.64,
-"end": 44.82,
+"start": 48.53,
+"end": 48.73,
 "line": 13
 },
 {
 "text": "一",
-"start": 44.82,
-"end": 44.95,
+"start": 48.73,
+"end": 48.88,
 "line": 13
 },
 {
 "text": "點",
-"start": 44.95,
-"end": 45.08,
+"start": 48.88,
+"end": 49.03,
 "line": 13
 },
 {
 "text": "澱",
-"start": 45.08,
-"end": 45.34,
+"start": 49.03,
+"end": 49.31,
 "line": 13
 },
 {
 "text": "粉",
-"start": 45.34,
-"end": 45.52,
+"start": 49.31,
+"end": 49.53,
 "line": 13
 },
 {
 "text": "吃",
-"start": 45.68,
-"end": 46.08,
+"start": 49.69,
+"end": 50.15,
 "line": 14
 },
 {
 "text": "得",
-"start": 46.08,
-"end": 46.3,
+"start": 50.15,
+"end": 50.27,
 "line": 14
 },
 {
 "text": "晚",
-"start": 46.3,
-"end": 46.48,
+"start": 50.27,
+"end": 50.55,
 "line": 14
 },
 {
 "text": "就",
-"start": 46.48,
-"end": 46.68,
+"start": 50.55,
+"end": 50.75,
 "line": 14
 },
 {
 "text": "選",
-"start": 46.68,
-"end": 46.96,
+"start": 50.75,
+"end": 51.05,
 "line": 14
 },
 {
 "text": "清",
-"start": 46.96,
-"end": 47.14,
+"start": 51.05,
+"end": 51.55,
 "line": 14
 },
 {
 "text": "淡",
-"start": 47.14,
-"end": 47.4,
+"start": 51.55,
+"end": 51.95,
 "line": 14
 },
 {
 "text": "好",
-"start": 47.4,
-"end": 47.58,
+"start": 51.95,
+"end": 52.23,
 "line": 14
 },
 {
 "text": "消",
-"start": 47.58,
-"end": 47.78,
+"start": 52.23,
+"end": 52.43,
 "line": 14
 },
 {
 "text": "化",
-"start": 47.78,
-"end": 47.96,
+"start": 52.43,
+"end": 52.63,
 "line": 14
 },
 {
 "text": "的",
-"start": 47.96,
-"end": 48.14,
+"start": 52.63,
+"end": 52.83,
 "line": 14
 },
 {
 "text": "身",
-"start": 48.44,
-"end": 48.88,
+"start": 52.99,
+"end": 53.39,
 "line": 15
 },
 {
 "text": "材",
-"start": 48.88,
-"end": 49.1,
+"start": 53.39,
+"end": 53.57,
 "line": 15
 },
 {
 "text": "管",
-"start": 49.1,
-"end": 49.26,
+"start": 53.57,
+"end": 53.73,
 "line": 15
 },
 {
 "text": "理",
-"start": 49.26,
-"end": 49.5,
+"start": 53.73,
+"end": 53.95,
 "line": 15
 },
 {
 "text": "不",
-"start": 49.5,
-"end": 49.62,
+"start": 53.95,
+"end": 54.07,
 "line": 15
 },
 {
 "text": "是",
-"start": 49.62,
-"end": 49.74,
+"start": 54.07,
+"end": 54.19,
 "line": 15
 },
 {
 "text": "餓",
-"start": 49.74,
-"end": 50.08,
+"start": 54.19,
+"end": 54.49,
 "line": 15
 },
 {
 "text": "自",
-"start": 50.08,
-"end": 50.19,
+"start": 54.49,
+"end": 54.6,
 "line": 15
 },
 {
 "text": "己",
-"start": 50.19,
-"end": 50.3,
+"start": 54.6,
+"end": 54.71,
 "line": 15
 },
 {
 "text": "是",
-"start": 50.54,
-"end": 50.82,
+"start": 55.35,
+"end": 55.55,
 "line": 15
 },
 {
 "text": "看",
-"start": 50.82,
-"end": 51.04,
+"start": 55.55,
+"end": 55.55,
 "line": 15
 },
 {
 "text": "懂",
-"start": 51.04,
-"end": 51.26,
+"start": 55.55,
+"end": 55.87,
 "line": 15
 },
 {
 "text": "一",
-"start": 51.26,
-"end": 51.4,
+"start": 55.89,
+"end": 56.19,
 "line": 15
 },
 {
 "text": "整",
-"start": 51.4,
-"end": 51.6,
+"start": 56.19,
+"end": 56.35,
 "line": 15
 },
 {
 "text": "天",
-"start": 51.6,
-"end": 51.8,
+"start": 56.35,
+"end": 56.57,
 "line": 15
 },
 {
 "text": "吃",
-"start": 51.8,
-"end": 52.02,
+"start": 56.57,
+"end": 56.81,
 "line": 15
 },
 {
 "text": "了",
-"start": 52.02,
-"end": 52.14,
+"start": 56.81,
+"end": 56.97,
 "line": 15
 },
 {
 "text": "什",
-"start": 52.14,
-"end": 52.28,
+"start": 56.97,
+"end": 57.11,
 "line": 15
 },
 {
 "text": "麼",
-"start": 52.28,
-"end": 52.42,
+"start": 57.11,
+"end": 57.25,
 "line": 15
 },
 {
 "text": "我",
-"start": 52.7,
-"end": 52.92,
+"start": 57.55,
+"end": 57.79,
 "line": 16
 },
 {
 "text": "是",
-"start": 52.92,
-"end": 53.14,
+"start": 57.79,
+"end": 58.03,
 "line": 16
 },
 {
 "text": "佳",
-"start": 53.14,
-"end": 53.42,
+"start": 58.03,
+"end": 58.31,
 "line": 16
 },
 {
 "text": "蓉",
-"start": 53.42,
-"end": 53.62,
+"start": 58.31,
+"end": 58.47,
 "line": 16
 },
 {
 "text": "飲",
-"start": 53.62,
-"end": 53.84,
+"start": 58.47,
+"end": 58.87,
 "line": 16
 },
 {
 "text": "食",
-"start": 53.84,
-"end": 54.04,
+"start": 58.87,
+"end": 59.05,
 "line": 16
 },
 {
 "text": "教",
-"start": 54.04,
-"end": 54.2,
+"start": 59.05,
+"end": 59.19,
 "line": 16
 },
 {
 "text": "練",
-"start": 54.2,
-"end": 54.44,
+"start": 59.19,
+"end": 59.47,
 "line": 16
 },
 {
 "text": "想",
-"start": 54.44,
-"end": 54.84,
+"start": 59.57,
+"end": 59.99,
 "line": 17
 },
 {
 "text": "知",
-"start": 54.84,
-"end": 55.0,
+"start": 59.99,
+"end": 60.14,
 "line": 17
 },
 {
 "text": "道",
-"start": 55.0,
-"end": 55.16,
+"start": 60.14,
+"end": 60.29,
 "line": 17
 },
 {
 "text": "你",
-"start": 55.16,
-"end": 55.42,
+"start": 60.29,
+"end": 60.59,
 "line": 17
 },
 {
 "text": "一",
-"start": 55.42,
-"end": 55.56,
+"start": 60.59,
+"end": 60.75,
 "line": 17
 },
 {
 "text": "整",
-"start": 55.56,
-"end": 55.72,
+"start": 60.75,
+"end": 60.95,
 "line": 17
 },
 {
 "text": "天",
-"start": 55.72,
-"end": 55.94,
+"start": 60.95,
+"end": 61.17,
 "line": 17
 },
 {
 "text": "到",
-"start": 55.94,
-"end": 56.09,
+"start": 61.17,
+"end": 61.35,
 "line": 17
 },
 {
 "text": "底",
-"start": 56.09,
-"end": 56.24,
+"start": 61.35,
+"end": 61.53,
 "line": 17
 },
 {
 "text": "有",
-"start": 56.24,
-"end": 56.34,
+"start": 61.53,
+"end": 61.65,
 "line": 17
 },
 {
 "text": "沒",
-"start": 56.34,
-"end": 56.44,
+"start": 61.65,
+"end": 61.77,
 "line": 17
 },
 {
 "text": "有",
-"start": 56.44,
-"end": 56.54,
+"start": 61.77,
+"end": 61.89,
 "line": 17
 },
 {
 "text": "吃",
-"start": 56.54,
-"end": 56.94,
+"start": 61.89,
+"end": 62.23,
 "line": 17
 },
 {
 "text": "對",
-"start": 56.94,
-"end": 57.12,
+"start": 62.23,
+"end": 62.37,
 "line": 17
 },
 {
 "text": "嗎",
-"start": 57.12,
-"end": 57.34,
+"start": 62.37,
+"end": 62.57,
 "line": 17
 },
 {
 "text": "留",
-"start": 57.64,
-"end": 57.86,
+"start": 62.97,
+"end": 63.21,
 "line": 18
 },
 {
 "text": "言",
-"start": 57.86,
-"end": 58.08,
+"start": 63.21,
+"end": 63.45,
 "line": 18
 },
 {
 "text": "或",
-"start": 58.08,
-"end": 58.42,
+"start": 63.45,
+"end": 63.77,
 "line": 18
 },
 {
 "text": "私",
-"start": 58.42,
-"end": 58.54,
+"start": 63.77,
+"end": 64.01,
 "line": 18
 },
 {
 "text": "訊",
-"start": 58.54,
-"end": 58.9,
+"start": 64.01,
+"end": 64.33,
 "line": 18
 },
 {
 "text": "外",
-"start": 58.9,
-"end": 59.04,
+"start": 64.33,
+"end": 64.55,
 "line": 18
 },
 {
 "text": "食",
-"start": 59.04,
-"end": 59.24,
+"start": 64.55,
+"end": 64.83,
 "line": 18
 },
 {
 "text": "預",
-"start": 59.38,
-"end": 59.7,
+"start": 65.01,
+"end": 65.49,
 "line": 18
 },
 {
 "text": "約",
-"start": 59.7,
-"end": 59.96,
+"start": 65.49,
+"end": 65.79,
 "line": 18
 },
 {
 "text": "免",
-"start": 59.96,
-"end": 60.16,
+"start": 65.79,
+"end": 66.07,
 "line": 18
 },
 {
 "text": "費",
-"start": 60.16,
-"end": 60.4,
+"start": 66.07,
+"end": 66.29,
 "line": 18
 },
 {
 "text": "飲",
-"start": 60.4,
-"end": 60.58,
+"start": 66.29,
+"end": 66.93,
 "line": 18
 },
 {
 "text": "食",
-"start": 60.58,
-"end": 60.78,
+"start": 66.93,
+"end": 67.17,
 "line": 18
 },
 {
 "text": "諮",
-"start": 60.78,
-"end": 61.02,
+"start": 67.17,
+"end": 67.47,
 "line": 18
 },
 {
 "text": "詢",
-"start": 61.02,
-"end": 61.22,
+"start": 67.47,
+"end": 67.67,
 "line": 18
 }
 ]
