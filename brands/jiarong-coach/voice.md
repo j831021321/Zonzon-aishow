@@ -27,6 +27,7 @@
 - **AI 配音模型：** 免費版 `s2.1-pro-free`，用「即時複製」：每次配音附上本人錄音當參考（`projects/skip-dinner/inputs/voice-self-trim.m4a` 的 0.1～17.4 秒＋那段逐字稿）。API 帳戶目前不能建固定模型（額度 0）
 - **AI 語速：** `speed 1.15`（比較輕快）
 - **AI 容易念錯：** 「澱粉」念成「丁粉」→ 配音文字寫「電粉」；「諮詢」→ 寫「免費的飲食諮詢」並在前面加逗號；停頓不夠的地方加「，」或「……」（但「……」後面接「有個」會念糊）
+- **聲音不要悶（EQ）：** `highpass=f=90, equalizer 250Hz -4dB, 500Hz -1.5dB, 3200Hz +4dB, 6500Hz +2.5dB, treble 10kHz +3dB, 輕壓縮`，最後 `loudnorm=I=-14`
 - **背景音樂：** 原創合成小曲（`projects/skip-dinner/music/make-bgm.py`），音量 0.16，人聲出現時自動再壓低
 
 ## 我的立場
